@@ -1,0 +1,67 @@
+@use "Vars";
+
+ .alert {
+     position: absolute;
+     top: 25px;
+     left: 25px;
+     background-color: white;
+     min-width: 200px;
+     width: fit-content;
+     padding: 5px;
+     border-radius: 10px;
+     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.329);
+     display: flex;
+     justify-content: left;
+     align-items: center;
+     gap: 10px;
+
+
+     .icon {
+         border: 1px solid white;
+         border-radius: 7px;
+         background-color: white;
+         padding: 7px;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         font-size: 1.2rem;
+         width: fit-content;
+         height: fit-content;
+     }
+ }
+
+ .info {
+     background-color: Vars.$info;
+     color: white;
+
+     .icon {
+         color: Vars.$info;
+     }
+ }
+
+ .warning {
+     background-color: Vars.$warning;
+     color: white;
+
+     .icon {
+         color: Vars.$warning;
+     }
+ }
+
+ .success {
+     background-color: Vars.$success;
+     color: white;
+
+     .icon {
+         color: Vars.$success;
+     }
+ }
+
+ .error {
+     background-color: Vars.$error;
+     color: white;
+
+     .icon {
+         color: Vars.$error;
+     }
+ }
